@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Soulance Home page</title>
+    
+  </head>
+  <!-- Firebase App -->
+<!-- Firebase App -->
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+
+<script>
+  const firebaseConfig = {
+  apiKey: "AIzaSyB0rKcScZ60BLxNOYvDzNqU7iqLrcFa4Dg",
+  authDomain: "soulance-2017e.firebaseapp.com",
+  projectId: "soulance-2017e",
+  storageBucket: "soulance-2017e.firebasestorage.app",
+  messagingSenderId: "38991014947",
+  appId: "1:38991014947:web:5573a7847d9d743ebd5596"
+};
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+
+
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+  <body>
+    <nav>
+      <div class="nav__header">
+        <div class="nav__logo">
+          <a href="#">Soul<span>Ance</span>.</a>
+        </div>
+        <div class="nav__menu__btn" id="menu-btn">
+          <span><i class="ri-menu-line"></i></span>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li><a href="#">Ayra</a></li>
+        <li><a href="#">QuietSoul</a></li>
+        <li><a href="#">SoulConnect</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="aboutus.html" t>About us</a></li>
+      </ul>
+      <!-- Original Buttons -->
+<div class="nav__btns">
+  <a href="login.html">
+  <button id="signupBtn"class="btn sign__up ">Sign Up</button>
+  <button id="loginBtn" class="btn sign__in">Sign In</button>
+  </a>
+
+  <!-- Profile shown after login -->
+  <div id="userMenu" style="display: none;">
+    <span id="userName" style="color: var(--accent-color); font-weight: bold;"></span>
+    <button id="logoutBtn" class="btn sign__up" style="margin-left: 10px;">Logout</button>
+  </div>
+</div>
+
+    </nav>
+    <header class="header__container">
+      <div class="header__image">
+        <div class="header__image__card header__image__card-1">
+          <span><i class="ri-heart-2-fill"></i></span>
+          Harmony
+        </div>
+        <div class="header__image__card header__image__card-2">
+          <span><i class="ri-speak-ai-fill"></i></span>
+           Whisper
+        </div>
+        <div class="header__image__card header__image__card-3">
+          <span><i class="ri-moon-clear-line"></i></i></span>
+           Stillness
+        </div>
+        <div class="header__image__card header__image__card-4">
+          <span><i class="ri-lightbulb-line"></i></span>
+          Lucent
+        </div>
+        <img src="assets/header.png" alt="header" />
+      </div>
+      <div class="header__content">
+        <h1>Every soul matters.<br />Every <span>STORY</span> begins here </h1>
+
+        <p>
+         Find your pause, your peace, and your purpose.
+Soulance is a quiet corner in a noisy world — a place to reflect, to share, to heal, and to grow.
+Begin your journey inward, where home isn't just a place, but a feeling.
+        </p>
+        <form action="/">
+          <div class="input__row">
+            <div class="input__group">
+              <h5>Destination</h5>
+              <div>
+                <span><i class="ri-map-pin-line"></i></span>
+                <input type="text" placeholder="Paris, France" />
+              </div>
+            </div>
+            <div class="input__group">
+              <h5>Date</h5>
+              <div>
+                <span><i class="ri-calendar-2-line"></i></span>
+                <input type="text" placeholder="17 July 2024" />
+              </div>
+            </div>
+          </div>
+          <button type="submit">Search</button>
+        </form>
+        <div class="bar">
+         © 2025 Soulance Dynamics. All rights reserved. 
+         
+        </div>
+      </div>
+    </header>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
